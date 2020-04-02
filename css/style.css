@@ -31,6 +31,10 @@ a {
 
 }
 
+p{
+	margin: .5rem;
+}
+
 ul {
 	list-style: none;
 }
@@ -146,6 +150,16 @@ h6 {
 .p-2{padding: 2rem ;}
 .p-3{padding: 3rem ;}
 
+.list li{
+	pdadding: .5rem 0;
+	border-bottom: #555 solid 1px;
+	width: 90%;
+}
+
+.list li a:hover{
+	color: var(--primary-color) !important;
+}
+
 /* ! Navigation */
 
 #main-nav {
@@ -255,4 +269,44 @@ h6 {
 
 #home-articles .articles-container > *:last-child{
 	grid-column: 2/span 2;
+}
+
+/*  ! Footer */
+
+#main-footer{
+	background: var(--dark-color);
+	color: #ffffff;
+}
+
+#main-footer img{
+	width: 150px;
+}
+
+#main-footer a{
+	color: #ffffff;
+}
+
+#main-footer .footer-container{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1.5rem;
+}
+
+#main-footer .footer-container > *:last-child{
+	background: #444444;
+	grid-column: 1/-1;
+	text-align: center;
+	padding: .5rem;
+	font-size: .75rem;
+}
+
+#main-footer .footer-container input[type="email"]{
+	width: 90%;
+	padding: .5rem;
+	margin-bottom: .5rem;
+}
+
+#main-footer .footer-container input[type="submit"]{
+	width: 90%;
+	font-weight: bold;
 }
